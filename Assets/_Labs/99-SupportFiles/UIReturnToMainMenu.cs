@@ -6,13 +6,13 @@ public class UIReturnToMainMenu : MonoBehaviour
 {
 
     public GameObject returnMenu;
-    //public GameObject fpsController;
+    public GameObject fpsController;
 
 
     public void Awake()
     {
        
-        //returnMenu.SetActive(false);
+        returnMenu.SetActive(false);
     }
 
     public void ReturnToMainMenu()
@@ -27,7 +27,7 @@ public class UIReturnToMainMenu : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Mouse0)))
         {
             returnMenu.SetActive(false);
-            //fpsController.SetActive(!fpsController.activeSelf);
+            fpsController.SetActive(!fpsController.activeSelf);
 
         }
         if ((Input.GetKeyDown(KeyCode.Escape)))
